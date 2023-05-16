@@ -52,6 +52,8 @@ const GlobalProvider: FC<Props> = ({ children }) => {
         data,
       });
 
+      setOrderList([...orderList, response.data]);
+
       setFormLoading(false);
     } catch (error: any) {
       setFormLoading(false);

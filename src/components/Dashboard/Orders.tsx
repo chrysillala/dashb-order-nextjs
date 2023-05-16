@@ -116,7 +116,7 @@ export default function Orders() {
 
   useEffect(() => {
     fetchOrders();
-  }, [rows]);
+  }, []);
 
   if (!rows.length) {
     return (
