@@ -25,4 +25,12 @@ declare global {
     username: string;
     password: string;
   }
+
+  type AuthContextType = {
+    isAuthenticated: boolean;
+    user: IUser | null;
+    login: (...args: any[]) => void;
+    loading: boolean;
+    logout: () => void;
+  };
 }
