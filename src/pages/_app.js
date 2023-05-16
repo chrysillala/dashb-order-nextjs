@@ -12,9 +12,11 @@ import ProtectRoute from "@/components/ProtectRoute";
 export default function App({ Component, pageProps }) {
   return (
     <AuthProvider>
+      <GlobalProvider>
         <ProtectRoute>
           <Component {...pageProps} />
         </ProtectRoute>
+      </GlobalProvider>
     </AuthProvider>
   );
 }

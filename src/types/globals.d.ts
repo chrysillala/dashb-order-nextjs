@@ -26,6 +26,19 @@ declare global {
     password: string;
   }
 
+  type GlobalContextType = {
+    orderList: IOrder[];
+    fetchOrders: () => void;
+    createOrder: (...args: any[]) => void;
+    formLoading: boolean;
+    isFormOpen: boolean;
+    handleAddFormClick: () => void;
+    page: number;
+    rowsPerPage: number;
+    changePage: (...args: any[]) => void;
+    changeRowsPerPage: (...args: any[]) => void;
+  };
+
   type AuthContextType = {
     isAuthenticated: boolean;
     user: IUser | null;
