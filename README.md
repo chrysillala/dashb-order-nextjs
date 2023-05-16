@@ -46,3 +46,4 @@ Here are some improvement ideas for the app:
 - Add search feature for order list
 - Add sort feature for order list
 - Add redirection when user visiting not authorized page
+- Add loading UI
